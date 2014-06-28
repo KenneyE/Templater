@@ -53,12 +53,11 @@
     </div><!-- /.container-fluid -->
   </nav>
 
-  <%= current_user.email %>
-  <div ng-view>
-
+  <div class="container" ng-view>
     <div ng-controller="TemplateListCtrl">
       <div ng-repeat="template in templates">
-        {{template.body}}
+        <h2>{{ template.title }}</h2>
+        <p>{{ template.body }}</p>
       </div>
     </div>
   </div>
