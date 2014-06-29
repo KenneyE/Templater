@@ -5,3 +5,6 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Template.create!(title: "First template", body: "This is the 1st template's body...", user_id: 1)
+Template.create!(title: "Second template", body: "This is the 2nd template", user_id: 1)

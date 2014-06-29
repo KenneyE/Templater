@@ -3,7 +3,7 @@ class TemplatesController < ApplicationController
 
   def index
     @templates = current_user.templates
-
+    # @templates = Template.all
     respond_with(@templates) do |format|
       format.json { render json: @templates }
     end
